@@ -157,7 +157,7 @@
           });
           it('should return total sum of all prices', function() {
             var total = sumTotal(testGrocery);
-            expect(total).to.equal(126.72);
+            expect(total).to.equal(173.98);
           });
         });
       });
@@ -213,7 +213,8 @@
           });
           it('should return an array containing movies released in the 90s', function() {
             var data = ninetiesKid(testMovies);
-            expect(data)
+            // line that was fixed
+            expect(data).to.eql(['Titanic', 'Pulp Fiction', 'Toy Story']);
           });
         });
 
